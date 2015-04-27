@@ -87,6 +87,7 @@
         });
     };
 
+    //new match function
     Iconpicker.prototype.matchEx = function (opIcon, icon) {
         return icon === opIcon.icon ||
                icon === opIcon.iconClassFix + opIcon.icon ||
@@ -334,7 +335,7 @@
 
     Iconpicker.prototype.setIconset = function (value) {
         var op = this.options;
-        var value = [].concat(value);
+        value = [].concat(value);
         var evalSet = [];
         var customSets = 0;
         $.each(value, function (index, setItem) {
