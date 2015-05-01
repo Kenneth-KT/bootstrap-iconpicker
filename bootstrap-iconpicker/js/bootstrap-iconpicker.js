@@ -349,7 +349,7 @@
                 $.each(subSet, function (subIndex, subSetItem) {
                     if (!Iconpicker.ICONSET.hasOwnProperty(subSetItem)) {
                         Iconpicker.ICONSET[subSetItem] = Iconpicker.DEFAULTS.iconset;
-                        evalSet.pust(subSetItem);
+                        evalSet.push(subSetItem);
                     }
                     else {
                         evalSet.push(subSetItem);
